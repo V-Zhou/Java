@@ -5,12 +5,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int c;
-        int f;
         Scanner in = new Scanner(System.in);
-        f = in.nextInt();
-        c = (int)( (f - 32) * 5 / 9.0 );
-        System.out.println(c);
+        int x;
+
+        double sum = 0;
+        int cnt = 0;
+        x = in.nextInt();
+        while (x != -1) {
+            sum += x;
+            cnt ++;
+            x = in.nextInt();
+        }
+        if (cnt > 0) {
+            System.out.println(sum/cnt);
+        }
 
     }
 }
