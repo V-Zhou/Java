@@ -15,6 +15,6 @@ public class Main {
         int prince = in.nextInt();
 
         System.out.println(bill + "-"+ prince + "=" + (bill-prince));
-//     git
+//     1.1 第一个程序
     }
 }
