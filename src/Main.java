@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,23 +8,10 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        double sum = 0;
-        int cnt ;
-        cnt = in.nextInt();
-        if (cnt > 0) {
-
-            int[] numbers = new int[cnt];
-            for ( int i = 0; i < cnt; i++)  {
-                numbers[i] = in.nextInt();
-                sum += numbers[i];
-            }
-            double average = sum / cnt;
-            for (int i = 0; i < numbers.length; i++) {
-                if (numbers[i] > average) {
-                    System.out.println(numbers[i]);
-                }
-            }
-            System.out.println(sum / cnt);
+        int[] scores = {87, 10, 20, 120, 22, 33};
+        System.out.println(scores.length);
+        for (int i=0; i<scores.length; i++) {
+            System.out.println(scores[i]+" ");
         }
 
 
