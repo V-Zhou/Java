@@ -18,7 +18,7 @@ public class Main {
                 sum += numbers[i];
             }
             double average = sum / cnt;
-            for (int i = 0; i < cnt; i++) {
+            for (int i = 0; i < numbers.length; i++) {
                 if (numbers[i] > average) {
                     System.out.println(numbers[i]);
                 }
