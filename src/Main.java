@@ -8,12 +8,14 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        int[] scores = {87, 10, 20, 120, 22, 33};
-        System.out.println(scores.length);
-        for (int i=0; i<scores.length; i++) {
-            System.out.println(scores[i]+" ");
-        }
+        int[] a = new int[10];
+        a[0] = 5;
+        int[] b = a;
+        System.out.println(a[0]);
+        b[0] = 16;
+        System.out.println(a[0]);
+        System.out.println(b[0]);
 
-
+        /// 5  16  16  普通变量是"所有者"(真拷贝 赋值)   数组变量是"管理者"(指针拷贝赋值)
     }
 }
