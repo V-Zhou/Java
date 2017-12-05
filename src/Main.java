@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -5,16 +6,15 @@ public class Main {
     public static void main(String[] args) {
 
         // TODO Auto-generated method stub
-        System.out.println("你好");
-
-//		System.out.println("echo: " + in.nextLine());
-
-        Scanner inBill = new Scanner(System.in);
-        int bill = inBill.nextInt();
+        int foot;
+        double inch;
         Scanner in = new Scanner(System.in);
-        int prince = in.nextInt();
+        foot = in.nextInt();
+        inch = in.nextDouble();
+        int meter = (int)((foot+inch/12.0)*0.3048*100);
+        System.out.println("foot="+foot+",inch="+inch);
+        System.out.println(meter);
 
-        System.out.println(bill + "-"+ prince + "=" + (bill-prince));
-//     1.1 第一个程序
+
     }
 }
