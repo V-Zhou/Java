@@ -12,7 +12,7 @@ public class Main {
         vm.getFood();
         vm.showBalance();
 
-        VendingMachine vm1 = new VendingMachine();
+        VendingMachine vm1 = new VendingMachine(100);
         vm1.insertMoney(200);
         vm.showBalance();
         vm1.showBalance();
@@ -30,6 +30,8 @@ public class Main {
         * 本地变量的生存期和作用于都是函数内部
         * 成员变量的生存期是对象的生存期, 作用于是类内部的成员函数
          */
+
+
 
     }
 }
